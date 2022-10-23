@@ -18,8 +18,6 @@ Will add additional Aliens to the database time permitting. As of now Humans, Vu
 
 I learned how to create an API and how to create a database on MongoDB.
 
-## Screenshots
-file:///home/jay/Downloads/Screenshot 2022-10-22 at 19-45-23 Star Trek Alien Database.png
 
 
 
