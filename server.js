@@ -3,6 +3,7 @@ const app = express()
 const cors = require('cors')
 const { response } = require('express')
 const MongoClient = require('mongodb').MongoClient
+const connectionString = process.env.DB_STRING
 
 
 //Use .env file in config folder
