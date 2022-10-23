@@ -4,6 +4,7 @@ const cors = require('cors')
 const { response } = require('express')
 const MongoClient = require('mongodb').MongoClient
 const connectionString = process.env.DB_STRING
+const PORT = process.env.PORT
 
 
 //Use .env file in config folder
