@@ -3,12 +3,12 @@ const app = express()
 const cors = require('cors')
 const { response } = require('express')
 const MongoClient = require('mongodb').MongoClient
-const connectionString = process.env.DB_STRING
-const PORT = process.env.PORT
-
 
 //Use .env file in config folder
 require("dotenv").config({ path: "./config/.env" });
+
+const PORT = process.env.PORT || 8000
+const connectionString = process.env.DB_STRING
 
 app.use (cors())
 app.use (express.json()) //mongoDB
