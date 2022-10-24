@@ -92,6 +92,9 @@ MongoClient.connect(connectionString) // for mongoDB
         })
         .catch(error => console.error(error))
     })
+    app.listen(process.env.PORT || PORT, () => {
+        console.log(`I'm running! On port ${PORT}, I'm a Server`)
+    })
 })
 .catch(error => console.error(error)) // for mongo db
 
@@ -110,9 +113,10 @@ MongoClient.connect(connectionString) // for mongoDB
 //     }
 // })
 
-app.listen(process.env.PORT || PORT, () => {
-    console.log(`I'm running! On port ${PORT}, I'm a Server`)
-})
+//normally this goes here, but moved into the .then callback to work with cyclic.sh
+// app.listen(process.env.PORT || PORT, () => {
+//     console.log(`I'm running! On port ${PORT}, I'm a Server`)
+// })
 
 
 
