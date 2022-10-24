@@ -80,7 +80,7 @@ MongoClient.connect(connectionString) // for mongoDB
         const infoCollection = db.collection('alien-info')
     
     app.get('/', (req,res) =>{
-        res.sendFile('index.html') //original code. res.sendFile(__dirname + './index.html') removed for cyclic.sh
+        res.sendFile('index.html') //original code: res.sendFile(__dirname + './index.html') removed for cyclic.sh
     })
     
     app.get('/api/:alienName',(req,res) =>{
